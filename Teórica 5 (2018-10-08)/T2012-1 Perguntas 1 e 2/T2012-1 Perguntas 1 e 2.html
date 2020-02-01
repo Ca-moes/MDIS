@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>T2012-1 Perguntas 1 e 2</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<p><p>Pergunta 1</p><p>Das várias soluções que foram aparecendo (um 
+problema de definição e uso de uma linguagem tem sempre mais do que uma 
+solução), há duas mais frequentes, que passo a apresentar.<br><br>Solução A:<br>----------<br>Predicados:<br>Compra(x,y,w,z) - x compra y do ano w pelo valor z<br>MaisAntigo(x,y) - x é mais antigo do que y<br>MaisCaro(x,y) - x é mais caro do que y<br>Ano(x,y) - x é do ano y<br><br>Funções:<br>carro(x) - carro que x comprou<br><br>Constantes:<br>rui, ana, nuno, bmw, opel, 2005, 2006, 2007, 2008, 16000€, 22000€<br><br>Nota1:
+ aqui bmw e opel são nomes de carros concretos, não de marcas em geral; 
+se houvesse mais veículos e pudessem surgir ambiguidades poder-se-ia 
+usar bmw1, opel2...<br>Nota2: tanto as constantes como os termos que 
+concretizam as funções representam objetos e são, por convenção, 
+escritos com letra minúscula.<br><br>Pergunta 2.<br>1. Compra(rui,opel,2007,16000€)<br>2. Compra(ana,bmw,2006,22000€)<br>3. Ano(carro(nuno),2005) ∨ Ano(carro(nuno),2008)<br>4. MaisAntigo(bmw,opel) → MaisCaro(bmw,opel)<br>5. ¬Ano(carro(nuno),2008) → MaisAntigo(carro(nuno),opel)<br>6. ¬MaisCaro(carro(rui),carro(nuno)) ∧ ¬MaisCaro(carro(ana),carro(nuno))<br><br>Solução B:<br>----------<br>Predicados:<br>Compra(x,y) - x compra y<br>x = y - x é o mesmo que y<br>x &lt; y - x é menor que y<br><br>Funções:<br>carro(x) - carro que x comprou<br>ano(x) - ano do carro x<br>preco(x) - preço do carro x<br><br>Constantes:<br>rui, ana, nuno, bmw, opel, 2005, 2006, 2007, 2008, 16000€, 22000€<br><br>Pergunta 2.<br>1. Compra(rui,opel) ∧ ano(opel)=2007 ∧ preco(opel)=16000€<br>2. Compra(ana,bmw) ∧ ano(bmw)=2006 ∧ preco(bmw)=22000€<br>3. ano(carro(nuno)) = 2005 ∨ ano(carro(nuno))=2008<br>4. ano(bmw) &lt; ano(opel) → preco(opel) &lt; preco(bmw)<br>5. ¬ano(carro(nuno))=2008 → ano(carro(nuno)) &lt; ano(opel)<br>6. ¬preco(carro(nuno))&lt;preco(carro(rui)) ∧ ¬preco(carro(nuno))&lt;preco(carro(ana))<br></p><br></p>
+</body>
+</html>
